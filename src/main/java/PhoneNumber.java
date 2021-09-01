@@ -5,9 +5,19 @@ public class PhoneNumber {
     private String PhoneCode;
 
     public PhoneNumber (String PhoneNumber, String PhoneCode) {
-        if ((PhoneNumber == null || PhoneNumber.length() < 7) || (PhoneCode == null || PhoneCode.length() != 2)){
-            throw new IllegalArgumentException("Invalid PhoneNumber");
+
+        if (PhoneNumber == null || PhoneCode == null){
+            throw new IllegalArgumentException("Phone Code and PhoneNumber are required");
         }
+
+        if (!PhoneCode.matches("\\d{2}")){
+            throw new IllegalArgumentException("Invalid Phone Code");
+        }
+
+        if (!PhoneNumber.matches("\\d{8}|\\d{9}")){
+            throw new IllegalArgumentException("Invalid Phone Number");
+        }
+
         this.PhoneNumber = PhoneNumber;
         this.PhoneCode = PhoneCode;
     }
