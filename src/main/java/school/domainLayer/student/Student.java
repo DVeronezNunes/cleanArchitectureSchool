@@ -17,16 +17,14 @@ public class Student {
 
     private Email email;
 
-    public CPF getCpf() {
-        return cpf;
-    }
+    public String getCpf() { return cpf.getCPF(); }
 
     public String getName() {
         return name;
     }
 
-    public Email getEmail() {
-        return email;
+    public String getEmail() {
+        return email.getEmailAdress();
     }
 
     public List<PhoneNumber> getPhoneNumbers() {
