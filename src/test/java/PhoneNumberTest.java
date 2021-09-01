@@ -49,4 +49,13 @@ class PhoneNumberTest {
         assertDoesNotThrow(() -> new PhoneNumber("12345678", "12"));
     }
 
+    @Test
+    void shouldTheValuesTheSameInputed(){
+        String phoneCode = "11";
+        String phoneNumber = "12345678";
+
+        PhoneNumber number = new PhoneNumber(phoneCode, phoneNumber);
+        assertEquals(phoneCode, number.getPhoneCode());
+        assertEquals(phoneNumber, number.getPhoneNumber());
+    }
 }

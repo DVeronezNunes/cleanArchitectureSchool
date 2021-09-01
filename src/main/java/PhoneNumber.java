@@ -4,7 +4,15 @@ public class PhoneNumber {
     private String PhoneNumber;
     private String PhoneCode;
 
-    public PhoneNumber (String PhoneNumber, String PhoneCode) {
+    public String getPhoneNumber() {
+        return PhoneNumber;
+    }
+
+    public String getPhoneCode() {
+        return PhoneCode;
+    }
+
+    public PhoneNumber (String PhoneCode, String PhoneNumber) {
 
         if (PhoneNumber == null || PhoneCode == null){
             throw new IllegalArgumentException("Phone Code and PhoneNumber are required");
