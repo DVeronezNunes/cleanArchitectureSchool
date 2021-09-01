@@ -5,7 +5,7 @@ public class PhoneNumber {
     private String PhoneCode;
 
     public PhoneNumber (String PhoneNumber, String PhoneCode) {
-        if (PhoneNumber == null || PhoneNumber.length() < 7 && PhoneCode == null || PhoneCode.length() != 2){
+        if ((PhoneNumber == null || PhoneNumber.length() < 7) || (PhoneCode == null || PhoneCode.length() != 2)){
             throw new IllegalArgumentException("Invalid PhoneNumber");
         }
         this.PhoneNumber = PhoneNumber;
