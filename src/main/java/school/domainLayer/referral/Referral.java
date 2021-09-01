@@ -4,13 +4,13 @@ import school.domainLayer.student.Student;
 
 import java.time.LocalDateTime;
 
-public class Refferal {
+public class Referral {
 
     private Student student;
     private Student referredStudent;
     private LocalDateTime referralDate;
 
-    public Refferal(Student student, Student referredStudent) {
+    public Referral(Student student, Student referredStudent) {
         this.student = student;
         this.referredStudent = referredStudent;
         this.referralDate = LocalDateTime.now();

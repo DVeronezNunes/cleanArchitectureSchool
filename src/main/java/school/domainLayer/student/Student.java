@@ -8,6 +8,7 @@ public class Student {
     //Entity (Can be distinguished from other instances using the school.student.CPF)
     private CPF cpf;
     private String name;
+    private String password;
 
     public Student(CPF cpf, String name, Email email) {
         this.cpf = cpf;
