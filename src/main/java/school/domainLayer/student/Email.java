@@ -1,3 +1,5 @@
+package school.domainLayer.student;
+
 public class Email {
 
     //Value Object (Can't be distinguished from other instances)

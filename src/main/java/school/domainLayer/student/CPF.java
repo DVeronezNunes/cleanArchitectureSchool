@@ -1,3 +1,5 @@
+package school.domainLayer.student;
+
 public class CPF {
 
     //Value Object (Can't be distinguished from other instances)
@@ -5,7 +7,7 @@ public class CPF {
 
     public CPF(String CPF) {
         if (CPF == null || !CPF.matches("\\d{3}\\.\\d{3}\\.\\d{3}-\\d{2}")){
-            throw new IllegalArgumentException("Invalid CPF");
+            throw new IllegalArgumentException("Invalid school.student.CPF");
         }
         this.CPF = CPF;
     }

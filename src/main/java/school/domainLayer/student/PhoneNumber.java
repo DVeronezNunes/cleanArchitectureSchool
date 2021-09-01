@@ -1,3 +1,5 @@
+package school.domainLayer.student;
+
 public class PhoneNumber {
 
     //Value Object (Can't be distinguished from other instances)
@@ -15,7 +17,7 @@ public class PhoneNumber {
     public PhoneNumber (String PhoneCode, String PhoneNumber) {
 
         if (PhoneNumber == null || PhoneCode == null){
-            throw new IllegalArgumentException("Phone Code and PhoneNumber are required");
+            throw new IllegalArgumentException("Phone Code and school.student.PhoneNumber are required");
         }
 
         if (!PhoneCode.matches("\\d{2}")){
