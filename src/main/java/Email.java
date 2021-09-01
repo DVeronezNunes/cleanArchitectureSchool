@@ -10,5 +10,8 @@ public class Email {
         this.emailAdress = emailAdress;
     }
 
+    public String getEmailAdress() {
+        return emailAdress;
+    }
 }
 

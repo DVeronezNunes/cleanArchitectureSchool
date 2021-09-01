@@ -50,12 +50,12 @@ class PhoneNumberTest {
     }
 
     @Test
-    void shouldTheValuesTheSameInputed(){
-        String phoneCode = "11";
-        String phoneNumber = "12345678";
+    void theInputedValuesShouldNotBeChanged(){
+        String validPhoneCode = "11";
+        String validPhoneNumber = "12345678";
 
-        PhoneNumber number = new PhoneNumber(phoneCode, phoneNumber);
-        assertEquals(phoneCode, number.getPhoneCode());
-        assertEquals(phoneNumber, number.getPhoneNumber());
+        PhoneNumber number = new PhoneNumber(validPhoneCode, validPhoneNumber);
+        assertEquals(validPhoneCode, number.getPhoneCode());
+        assertEquals(validPhoneNumber, number.getPhoneNumber());
     }
 }

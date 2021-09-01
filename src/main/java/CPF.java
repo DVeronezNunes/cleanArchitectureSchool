@@ -9,4 +9,8 @@ public class CPF {
         }
         this.CPF = CPF;
     }
+
+    public String getCPF() {
+        return CPF;
+    }
 }

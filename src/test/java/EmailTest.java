@@ -23,4 +23,12 @@ class EmailTest {
     void shouldBeAcceptACPFValid(){
         assertDoesNotThrow(() -> new Email("test@test.com"));
     }
+
+    @Test
+    void theInputedValueShouldNotBeChanged(){
+        String validEmail = "test@test.com";
+
+        Email mail = new Email(validEmail);
+        assertEquals(validEmail, mail.getEmailAdress());
+    }
 }

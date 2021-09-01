@@ -18,4 +18,12 @@ class CPFTest {
     void shouldBeAcceptACPFValid(){
         assertDoesNotThrow(() -> new CPF("123.456.789-10"));
     }
+
+    @Test
+    void theInputedValueShouldNotBeChanged(){
+        String validCPF = "123.456.789-10";
+
+        CPF number = new CPF(validCPF);
+        assertEquals(validCPF, number.getCPF());
+    }
 }
