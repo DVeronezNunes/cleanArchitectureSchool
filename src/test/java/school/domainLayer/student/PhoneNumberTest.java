@@ -1,3 +1,5 @@
+package school.domainLayer.student;
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -49,4 +51,13 @@ class PhoneNumberTest {
         assertDoesNotThrow(() -> new PhoneNumber("12345678", "12"));
     }
 
+    @Test
+    void theInputedValuesShouldNotBeChanged(){
+        String validPhoneCode = "11";
+        String validPhoneNumber = "12345678";
+
+        PhoneNumber number = new PhoneNumber(validPhoneCode, validPhoneNumber);
+        assertEquals(validPhoneCode, number.getPhoneCode());
+        assertEquals(validPhoneNumber, number.getPhoneNumber());
+    }
 }

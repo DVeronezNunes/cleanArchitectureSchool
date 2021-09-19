@@ -1,3 +1,5 @@
+package school.domainLayer.student;
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -22,5 +24,13 @@ class EmailTest {
     @Test
     void shouldBeAcceptACPFValid(){
         assertDoesNotThrow(() -> new Email("test@test.com"));
+    }
+
+    @Test
+    void theInputedValueShouldNotBeChanged(){
+        String validEmail = "test@test.com";
+
+        Email mail = new Email(validEmail);
+        assertEquals(validEmail, mail.getEmailAdress());
     }
 }

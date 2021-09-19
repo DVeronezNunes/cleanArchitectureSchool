@@ -1,3 +1,5 @@
+package school.domainLayer.student;
+
 public class Email {
 
     //Value Object (Can't be distinguished from other instances)
@@ -10,5 +12,8 @@ public class Email {
         this.emailAdress = emailAdress;
     }
 
+    public String getEmailAdress() {
+        return emailAdress;
+    }
 }
 
