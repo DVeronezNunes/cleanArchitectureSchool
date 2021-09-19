@@ -28,5 +28,6 @@ public class EnrollStudentTest {
         assertEquals(name, found.getName());
         assertEquals(cpf, found.getCpf());
         assertEquals(email, found.getEmail());
+
     }
 }
